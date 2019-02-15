@@ -1,9 +1,11 @@
-"timestamp,light,humidity,temp"
-time: timestamp
+# Timeseries-Forwarder
 
-fields: light, humidity, temp
+This is an [**MQTT**](http://mqtt.org) client that subscribes to the **timeseries** topic, and forwards received messages to an [**InfluxDB**](https://docs.influxdata.com/influxdb/v1.7/) instance.
 
-tags: location, plant, plant_id, sensor_package, experiment_name (is even more meta)
+## How to use
 
-subsciber as bridge MQTT=>HTTPS: @ https://www.npmjs.com/package/mqtt
+ATM, the host and port for the MQTT broker and the InfluxDB instance are hard-coded. You'll want to update according to your needs.
 
+## Dependencies
+
+[mqtt library](https://www.npmjs.com/package/mqtt)
